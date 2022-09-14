@@ -1,0 +1,26 @@
+{
+  "name": "<PROJECT_NAME>",
+  "version": "0.0.0",
+  "description": "<PROJECT_DESCRIPTION>",
+  "main": "<PROJECT_MAIN>",
+  "private": true,
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+<HTTPS_GIT_URL>"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "node"
+  ],
+  "author": "Jan <git@bode.fun>",
+  "license": "<LICENSE>",
+  "bugs": {
+    "url": "https://github.com/<AUTHOR>/<PROJECT>/issues"
+  },
+  "homepage": "https://github.com/<AUTHOR>/<PROJECT>#readme"
+}
