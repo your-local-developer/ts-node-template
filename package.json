@@ -11,9 +11,13 @@
     "compile": "corepack yarn compile:ts && corepack yarn declarations",
     "compile:ts": "swc src -d dist/compiled",
     "declarations": "tsc",
-    "lint": "xo --fix",
+    "lint:fix": "xo --fix",
     "doc": "typedoc --plugin typedoc-plugin-markdown --out docs src/**/*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"WARNING: no test specified\"",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
+    "addCommitlint": "yarn husky add .husky/commit-msg 'corepack yarn dlx commitlint --edit \"$1\"'"
   },
   "repository": {
     "type": "git",
@@ -43,6 +47,10 @@
     "@swc/core": "^1.3.0",
     "@types/node": "^18.7.18",
     "chokidar": "^3.5.3",
+    "commitlint": "^17.1.2",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "husky": "^8.0.0",
+    "pinst": "^3.0.0",
     "typedoc": "^0.23.14",
     "typedoc-plugin-markdown": "^3.13.6",
     "typescript": "^4.8.3",
