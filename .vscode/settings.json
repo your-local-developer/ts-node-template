@@ -1,0 +1,39 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "samverschueren.linter-xo"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "samverschueren.linter-xo"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "samverschueren.linter-xo"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "samverschueren.linter-xo"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "xo.enable": true,
+  "xo.format.enable": true,
+  "cSpell.enabled": true,
+  "cSpell.language": "en-GB,de",
+  "cSpell.enableFiletypes": [
+    "dotenv",
+    "json",
+    "jsonc",
+    "sql",
+    "md",
+    "scminput"
+  ],
+}
